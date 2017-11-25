@@ -290,10 +290,6 @@ header .wrapper {
   transition-delay: 0s;
 }
 
-.main-area .movie-row .movie-slider:hover {
-  transition-delay: .35s;
-}
-
 .main-area .movie-row .movie-slider .movie-glimpse {
   display: inline-block;
   height: 10.38961vw;
@@ -303,11 +299,19 @@ header .wrapper {
   -moz-transition: -moz-transform 0.25s;
   -webkit-transition: -webkit-transform 0.25s;
   transition: transform 0.25s;
-  transition-delay: 0s;
 }
 
-.main-area .movie-row .movie-slider .movie-glimpse:hover {
-  transition-delay: .35s;
+.main-area .movie-row .movie-slider .movie-glimpse .glimpse {
+  height: 100%;
+  width: 100%;
+  background-color: tomato;
+  -moz-transition: -moz-transform 0.25s;
+  -webkit-transition: -webkit-transform 0.25s;
+  transition: transform 0.25s;
+}
+
+.main-area .movie-row .movie-slider .movie-glimpse .movie-elapsed {
+  background-color: blue;
 }
 
 .big {
@@ -320,14 +324,12 @@ header .wrapper {
   -moz-transform: translateX(-6.86106vw);
   -webkit-transform: translateX(-6.86106vw);
   transform: translateX(-6.86106vw);
-  transition-delay: .35s !important;
 }
 
 .go_right {
   -moz-transform: translateX(6.86106vw);
   -webkit-transform: translateX(6.86106vw);
   transform: translateX(6.86106vw);
-  transition-delay: .35s !important;
 }
 
 .wrapper {

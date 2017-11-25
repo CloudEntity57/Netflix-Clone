@@ -251,9 +251,6 @@ $height:$width/1.75;
       overflow-y:visible;
       @include transition($slider_spd);
       transition-delay:0s;
-      &:hover{
-        transition-delay:.35s;
-      }
       .movie-glimpse{
         display: inline-block;
         height:$height;
@@ -261,9 +258,15 @@ $height:$width/1.75;
         position: relative;
         background-color:tomato;
         @include transition($slider_spd);
-        transition-delay:0s;
-        &:hover{
-          transition-delay:.35s;
+        // transition-delay:0s;
+        .glimpse{
+          height:100%;
+          width:100%;
+          background-color:tomato;
+          @include transition($slider_spd);
+        }
+        .movie-elapsed{
+          background-color:blue;
         }
       }
     }
@@ -278,13 +281,9 @@ $big_horiz:$big_scale*2.65;
 }
 .go_left{
   @include transform(translateX(-($width*$big_scale)/$big_horiz));
-  // background-color:orange !important;
-  transition-delay:.35s !important;
 }
 .go_right{
   @include transform(translateX(($width*$big_scale)/$big_horiz));
-  // background-color:green !important;
-  transition-delay:.35s !important;
 }
 .wrapper{
   padding:0px 3.75vw;
