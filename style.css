@@ -254,6 +254,7 @@ header .wrapper {
   flex-direction: column;
   justify-content: space-around;
   height: 50vh;
+  background-color: #333333;
 }
 
 .main-area .movie-row {
