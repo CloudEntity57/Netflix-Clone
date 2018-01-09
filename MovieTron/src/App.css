@@ -1,0 +1,828 @@
+html {
+  background-color: #141414;
+}
+
+header {
+  height: 75px;
+  width: 100vw;
+  background-color: #333333;
+  color: #fff;
+}
+
+header .pull-left {
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 350px;
+}
+
+header .pull-left #browse {
+  color: #e50914;
+}
+
+header .pull-right {
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 150px;
+}
+
+header .wrapper {
+  position: fixed;
+  width: 100vw;
+  height: 75px;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.main-logo img {
+  width: 12em;
+}
+
+.top-preview {
+  height: 40vw;
+  width: 100vw;
+  position: relative;
+}
+
+.top-preview .top-overlay {
+  color: gray;
+  z-index: 1;
+  height: 40vw;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+}
+
+.top-preview .top-overlay .overlay-content {
+  height: 100%;
+  padding-left: 0px;
+}
+
+.top-preview .top-overlay .graytone {
+  background-color: rgba(20, 20, 20, 0.7);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.top-preview .top-overlay .mov-title {
+  font-size: 3.5vw;
+}
+
+.top-preview .top-overlay .mov-subtitle {
+  font-size: 1.25vw;
+  padding-bottom: 1vh;
+}
+
+.top-preview .top-overlay .next-up {
+  font-size: 1.5vw;
+}
+
+.top-preview .top-overlay p {
+  font-size: 1.25vw;
+}
+
+.top-preview .top-overlay .season {
+  color: #fff;
+  margin-right: 1vw;
+}
+
+.top-preview .top-overlay .mov-title, .top-preview .top-overlay .next-up {
+  color: #fff;
+}
+
+.top-preview .top-overlay .series-desc {
+  margin-bottom: 1vw;
+}
+
+.top-preview .top-overlay .series-desc i {
+  font-size: 2.5vw;
+}
+
+.top-preview .top-overlay .series-desc div {
+  display: inline-block;
+  width: 75%;
+  margin-left: 1vw;
+  font-size: 1vw;
+}
+
+.top-preview .top-overlay .preview-col-sm {
+  width: 20%;
+  float: left;
+  height: 100%;
+}
+
+.top-preview .top-overlay .preview-col-lg {
+  width: 40%;
+  float: left;
+  height: 100%;
+}
+
+.top-preview .top-overlay .detail-item {
+  font-size: 1em;
+  color: #fff;
+}
+
+.top-preview .top-overlay .movie-desc {
+  margin-bottom: 1vw;
+}
+
+.top-preview .top-overlay .movie-desc span {
+  color: #fff;
+}
+
+.top-preview .top-overlay .movie-top-buttons {
+  color: #fff;
+  font-size: 1vw;
+  display: inline-block;
+}
+
+.top-preview .top-overlay .movie-top-buttons > div {
+  margin-right: .5vw;
+}
+
+.top-preview .top-overlay .movie-top-buttons .circle {
+  position: relative;
+  border: 1.5px solid gray;
+  width: 3.25vw;
+  height: 3.25vw;
+  border-radius: 90px;
+  color: gray;
+  display: inline-block;
+  text-align: center;
+  padding: 2px;
+  cursor: pointer;
+}
+
+.top-preview .top-overlay .movie-top-buttons .circle i {
+  color: #fff;
+  font-size: 1.625vw;
+  vertical-align: middle;
+  margin-top: 25%;
+  margin-left: .2em;
+}
+
+.top-preview .top-overlay .movie-top-buttons .circle:hover {
+  -moz-transform: scale(1.15);
+  -webkit-transform: scale(1.15);
+  transform: scale(1.15);
+  -moz-transition: -moz-transform 0.75s;
+  -webkit-transition: -webkit-transform 0.75s;
+  transition: transform 0.75s;
+  border-color: #fff;
+}
+
+.top-preview .top-overlay .movie-top-buttons .my-list {
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 7px;
+}
+
+.top-preview .top-overlay .play-window {
+  height: 40vw;
+  justify-content: space-around;
+  display: flex;
+  align-items: center;
+}
+
+.top-preview .top-overlay .play-window .circle {
+  position: relative;
+  border: 1.5px solid #fff;
+  width: 8vw;
+  height: 8vw;
+  border-radius: 90px;
+  color: #fff;
+  display: inline-block;
+  text-align: center;
+  padding: 2px;
+  cursor: pointer;
+  align-items: center;
+}
+
+.top-preview .top-overlay .play-window .circle i {
+  color: #fff;
+  font-size: 4vw;
+  vertical-align: middle;
+  margin-top: 25%;
+  margin-left: .2em;
+}
+
+.top-preview .top-overlay .play-window .circle:hover {
+  background-color: rgba(34, 34, 34, 0.5);
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  -moz-transition: -moz-transform 0.5s;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+}
+
+.top-preview .top-overlay .play-window .circle:hover i {
+  color: red;
+}
+
+.top-preview .top-overlay > div {
+  padding-left: 0px;
+}
+
+.top-preview .img-overlay {
+  height: 40vw;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  background-color: #000;
+  background: -webkit-linear-gradient(to right, #000 0%, rgba(27, 27, 27, 0) 30%);
+  background: -o-linear-gradient(to right, #000 0%, rgba(27, 27, 27, 0) 30%);
+  background: linear-gradient(to right, #000 0%, rgba(27, 27, 27, 0) 30%);
+}
+
+.top-preview .top-img-blur {
+  height: 40vw;
+  background-color: #000;
+}
+
+.top-preview .top-img {
+  height: 40vw;
+  background-image: url("images/top-img2.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-left: 0px;
+}
+
+.top-preview .top-preview-background .col-xs-9 {
+  padding: 0px !important;
+}
+
+.top-preview .top-movie-img {
+  height: 40vw;
+  padding-left: 0px;
+}
+
+.top-preview .top-movie-img .top-movie-inner {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.top-preview .bottom-button-bar {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  height: 6vw;
+  bottom: 0px;
+  background: -webkit-linear-gradient(to top, #000 -50%, rgba(27, 27, 27, 0) 100%);
+  background: -o-linear-gradient(to top, #000 -50%, rgba(27, 27, 27, 0) 100%);
+  background: linear-gradient(to top, #000 -50%, rgba(27, 27, 27, 0) 100%);
+  bottom: 0px;
+}
+
+.top-preview .bottom-button-bar .buttons {
+  display: flex;
+  flex-direction: row;
+}
+
+.top-preview .bottom-button-bar .buttons .button {
+  font-family: 'Helvetica Neue', Helvetica,Arial,sans-serif;
+  padding: 2.5vw 0vw;
+  color: #cccccc;
+  letter-spacing: .15em;
+  font-size: 1vw;
+  margin-right: 3vw;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.top-preview .bottom-button-bar .buttons .button:hover {
+  color: #fff;
+}
+
+.top-preview .bottom-button-bar .buttons .button-selected {
+  color: #fff;
+  border-bottom: 0.75vw solid #e50914;
+}
+
+.main-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 2.5vw;
+  background-color: #141414;
+  overflow: hidden;
+  padding-bottom: 50vh;
+}
+
+.main-area .movie-preview-wrapper {
+  margin-bottom: 4vw;
+  position: relative;
+  min-width: 100vw;
+  background-color: #141414;
+}
+
+.main-area .nomargin {
+  margin-bottom: 0vw !important;
+}
+
+.main-area .movie-row {
+  margin-bottom: 4vw;
+  position: relative;
+  min-width: 100vw;
+  background-color: #141414;
+}
+
+.main-area .movie-row .movie-row-title {
+  color: #fff;
+  font-size: 1.75vw;
+  padding-bottom: .75vw;
+}
+
+.main-area .movie-row .movie-measure {
+  width: 100%;
+}
+
+.main-area .movie-row .movie-slider, .main-area .movie-row .tall-movie-slider {
+  white-space: nowrap;
+  position: relative;
+  overflow-x: visible;
+  overflow-y: visible;
+  -moz-transition: -moz-transform 0.55s;
+  -webkit-transition: -webkit-transform 0.55s;
+  transition: transform 0.55s;
+}
+
+.main-area .movie-row .movie-slider .movie-glimpse, .main-area .movie-row .tall-movie-slider .movie-glimpse {
+  display: inline-block;
+  height: 10.38961vw;
+  width: 18.18182vw;
+  position: relative;
+  -moz-transition: -moz-transform 0.55s;
+  -webkit-transition: -webkit-transform 0.55s;
+  transition: transform 0.55s;
+}
+
+.main-area .movie-row .movie-slider .movie-glimpse .glimpse, .main-area .movie-row .tall-movie-slider .movie-glimpse .glimpse {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  -moz-transition: -moz-transform 0.55s;
+  -webkit-transition: -webkit-transform 0.55s;
+  transition: transform 0.55s;
+}
+
+.main-area .movie-row .movie-slider .movie-glimpse .glimpse .glimpse-text, .main-area .movie-row .tall-movie-slider .movie-glimpse .glimpse .glimpse-text {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.main-area .movie-row .movie-slider .movie-glimpse .glimpse .glimpse-text .glimpse-text-overlay, .main-area .movie-row .tall-movie-slider .movie-glimpse .glimpse .glimpse-text .glimpse-text-overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+  background: -webkit-linear-gradient(to top, #000 0%, rgba(27, 27, 27, 0) 50%);
+  background: -o-linear-gradient(to top, #000 0%, rgba(27, 27, 27, 0) 50%);
+  background: linear-gradient(to top, #000 0%, rgba(27, 27, 27, 0) 50%);
+}
+
+.main-area .movie-row .movie-slider .movie-glimpse .glimpse .glimpse-text .play-window, .main-area .movie-row .tall-movie-slider .movie-glimpse .glimpse .glimpse-text .play-window {
+  height: 50%;
+  justify-content: space-around;
+  display: flex;
+  align-items: center;
+}
+
+.main-area .movie-row .movie-slider .movie-glimpse .glimpse .glimpse-text .play-window .circle, .main-area .movie-row .tall-movie-slider .movie-glimpse .glimpse .glimpse-text .play-window .circle {
+  position: relative;
+  border: 1.5px solid #fff;
+  width: 3vw;
+  height: 3vw;
+  border-radius: 90px;
+  color: #fff;
+  display: inline-block;
+  text-align: center;
+  padding: 2px;
+  margin-top: 2vw;
+  cursor: pointer;
+  align-items: center;
+  background-color: rgba(34, 34, 34, 0.5);
+}
+
+.main-area .movie-row .movie-slider .movie-glimpse .glimpse .glimpse-text .play-window .circle i, .main-area .movie-row .tall-movie-slider .movie-glimpse .glimpse .glimpse-text .play-window .circle i {
+  color: #fff;
+  font-size: 1.5vw;
+  vertical-align: middle;
+  margin-top: 0.6vw;
+  margin-left: .2em;
+}
+
+.main-area .movie-row .movie-slider .movie-glimpse .glimpse .glimpse-text .play-window .circle i, .main-area .movie-row .tall-movie-slider .movie-glimpse .glimpse .glimpse-text .play-window .circle i {
+  color: red;
+  margin-left: .2em;
+}
+
+.main-area .movie-row .movie-slider .movie-glimpse .glimpse .glimpse-text .info-window, .main-area .movie-row .tall-movie-slider .movie-glimpse .glimpse .glimpse-text .info-window {
+  height: 35%;
+  z-index: 100;
+  position: relative;
+}
+
+.main-area .movie-row .movie-slider .movie-glimpse .glimpse .glimpse-text .info-window .info-window-info, .main-area .movie-row .tall-movie-slider .movie-glimpse .glimpse .glimpse-text .info-window .info-window-info {
+  font-size: .65vw;
+  color: #fff;
+  height: 100%;
+  width: 80%;
+  display: inline-block;
+  padding: .5vw .75vw;
+  position: absolute;
+  left: 0px;
+}
+
+.main-area .movie-row .movie-slider .movie-glimpse .glimpse .glimpse-text .info-window .info-window-info .desc, .main-area .movie-row .tall-movie-slider .movie-glimpse .glimpse .glimpse-text .info-window .info-window-info .desc {
+  font-size: .5vw;
+  white-space: normal !important;
+}
+
+.main-area .movie-row .movie-slider .movie-glimpse .glimpse .glimpse-text .info-window .info-window-likes, .main-area .movie-row .tall-movie-slider .movie-glimpse .glimpse .glimpse-text .info-window .info-window-likes {
+  height: 100%;
+  width: 20%;
+  display: inline-block;
+  position: absolute;
+  right: 0px;
+}
+
+.main-area .movie-row .movie-slider .movie-glimpse .glimpse .glimpse-text .info-window .info-window-likes .circle, .main-area .movie-row .tall-movie-slider .movie-glimpse .glimpse .glimpse-text .info-window .info-window-likes .circle {
+  position: relative;
+  border: 1.5px solid #fff;
+  width: 1.25vw;
+  height: 1.25vw;
+  border-radius: 90px;
+  color: #fff;
+  display: inline-block;
+  text-align: center;
+  padding: 2px;
+  display: block;
+  border: 1px solid #fff !important;
+  margin-bottom: .25em;
+}
+
+.main-area .movie-row .movie-slider .movie-glimpse .glimpse .glimpse-text .info-window .info-window-likes .circle i, .main-area .movie-row .tall-movie-slider .movie-glimpse .glimpse .glimpse-text .info-window .info-window-likes .circle i {
+  color: #fff;
+  font-size: 0.625vw;
+  vertical-align: middle;
+  margin-top: 0em;
+  margin-left: .2em;
+}
+
+.main-area .movie-row .movie-slider .movie-glimpse .glimpse .glimpse-text .info-window .info-window-likes .circle i, .main-area .movie-row .tall-movie-slider .movie-glimpse .glimpse .glimpse-text .info-window .info-window-likes .circle i {
+  position: absolute;
+  top: .25vw;
+  left: .15vw;
+}
+
+.main-area .movie-row .movie-slider .movie-glimpse .glimpse .glimpse-text .down, .main-area .movie-row .tall-movie-slider .movie-glimpse .glimpse .glimpse-text .down {
+  height: 15%;
+  width: 100%;
+  color: #fff;
+  position: relative;
+  z-index: 100;
+  text-align: center;
+}
+
+.main-area .movie-row .movie-slider .movie-glimpse .glimpse .glimpse-text .down i:hover, .main-area .movie-row .tall-movie-slider .movie-glimpse .glimpse .glimpse-text .down i:hover {
+  color: red;
+  cursor: pointer;
+}
+
+.main-area .movie-row .movie-slider .movie-glimpse .movie-elapsed, .main-area .movie-row .tall-movie-slider .movie-glimpse .movie-elapsed {
+  display: inline-block;
+  text-align: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 2.5vw;
+}
+
+.main-area .movie-row .movie-slider .movie-glimpse .movie-elapsed .elapsed_bar, .main-area .movie-row .tall-movie-slider .movie-glimpse .movie-elapsed .elapsed_bar {
+  display: inline-block;
+  width: 60%;
+  height: 3px;
+  background-color: #666666;
+  vertical-align: middle;
+}
+
+.main-area .movie-row .movie-slider .movie-glimpse-tall, .main-area .movie-row .tall-movie-slider .movie-glimpse-tall {
+  display: inline-block;
+  height: 35.45455vw;
+  width: 18.18182vw;
+  position: relative;
+  -moz-transition: -moz-transform 0.55s;
+  -webkit-transition: -webkit-transform 0.55s;
+  transition: transform 0.55s;
+}
+
+.main-area .movie-row .movie-slider .movie-glimpse-tall .glimpse, .main-area .movie-row .tall-movie-slider .movie-glimpse-tall .glimpse {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  -moz-transition: -moz-transform 0.55s;
+  -webkit-transition: -webkit-transform 0.55s;
+  transition: transform 0.55s;
+}
+
+.main-area .movie-row .movie-slider .movie-glimpse-tall .glimpse .glimpse-text, .main-area .movie-row .tall-movie-slider .movie-glimpse-tall .glimpse .glimpse-text {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.main-area .movie-row .movie-slider .movie-glimpse-tall .glimpse .glimpse-text .glimpse-text-overlay, .main-area .movie-row .tall-movie-slider .movie-glimpse-tall .glimpse .glimpse-text .glimpse-text-overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+  background: -webkit-linear-gradient(to top, #000 0%, rgba(27, 27, 27, 0) 50%);
+  background: -o-linear-gradient(to top, #000 0%, rgba(27, 27, 27, 0) 50%);
+  background: linear-gradient(to top, #000 0%, rgba(27, 27, 27, 0) 50%);
+}
+
+.main-area .movie-row .movie-slider .movie-glimpse-tall .glimpse .glimpse-text .play-window, .main-area .movie-row .tall-movie-slider .movie-glimpse-tall .glimpse .glimpse-text .play-window {
+  height: 50%;
+  justify-content: space-around;
+  display: flex;
+  align-items: center;
+}
+
+.main-area .movie-row .movie-slider .movie-glimpse-tall .glimpse .glimpse-text .play-window .circle, .main-area .movie-row .tall-movie-slider .movie-glimpse-tall .glimpse .glimpse-text .play-window .circle {
+  position: relative;
+  border: 1.5px solid #fff;
+  width: 3vw;
+  height: 3vw;
+  border-radius: 90px;
+  color: #fff;
+  display: inline-block;
+  text-align: center;
+  padding: 2px;
+  margin-top: 2vw;
+  cursor: pointer;
+  align-items: center;
+  background-color: rgba(34, 34, 34, 0.5);
+}
+
+.main-area .movie-row .movie-slider .movie-glimpse-tall .glimpse .glimpse-text .play-window .circle i, .main-area .movie-row .tall-movie-slider .movie-glimpse-tall .glimpse .glimpse-text .play-window .circle i {
+  color: #fff;
+  font-size: 1.5vw;
+  vertical-align: middle;
+  margin-top: 0.6vw;
+  margin-left: .2em;
+}
+
+.main-area .movie-row .movie-slider .movie-glimpse-tall .glimpse .glimpse-text .play-window .circle i, .main-area .movie-row .tall-movie-slider .movie-glimpse-tall .glimpse .glimpse-text .play-window .circle i {
+  color: red;
+  margin-left: .2em;
+}
+
+.main-area .movie-row .movie-slider .movie-glimpse-tall .glimpse .glimpse-text .info-window, .main-area .movie-row .tall-movie-slider .movie-glimpse-tall .glimpse .glimpse-text .info-window {
+  height: 35%;
+  z-index: 100;
+  position: relative;
+}
+
+.main-area .movie-row .movie-slider .movie-glimpse-tall .glimpse .glimpse-text .info-window .info-window-info, .main-area .movie-row .tall-movie-slider .movie-glimpse-tall .glimpse .glimpse-text .info-window .info-window-info {
+  font-size: .65vw;
+  color: #fff;
+  height: 100%;
+  width: 80%;
+  display: inline-block;
+  padding: .5vw .75vw;
+  position: absolute;
+  left: 0px;
+}
+
+.main-area .movie-row .movie-slider .movie-glimpse-tall .glimpse .glimpse-text .info-window .info-window-info .desc, .main-area .movie-row .tall-movie-slider .movie-glimpse-tall .glimpse .glimpse-text .info-window .info-window-info .desc {
+  font-size: .5vw;
+  white-space: normal !important;
+}
+
+.main-area .movie-row .movie-slider .movie-glimpse-tall .glimpse .glimpse-text .info-window .info-window-likes, .main-area .movie-row .tall-movie-slider .movie-glimpse-tall .glimpse .glimpse-text .info-window .info-window-likes {
+  height: 100%;
+  width: 20%;
+  display: inline-block;
+  position: absolute;
+  right: 0px;
+}
+
+.main-area .movie-row .movie-slider .movie-glimpse-tall .glimpse .glimpse-text .info-window .info-window-likes .circle, .main-area .movie-row .tall-movie-slider .movie-glimpse-tall .glimpse .glimpse-text .info-window .info-window-likes .circle {
+  position: relative;
+  border: 1.5px solid #fff;
+  width: 1.25vw;
+  height: 1.25vw;
+  border-radius: 90px;
+  color: #fff;
+  display: inline-block;
+  text-align: center;
+  padding: 2px;
+  display: block;
+  border: 1px solid #fff !important;
+  margin-bottom: .25em;
+}
+
+.main-area .movie-row .movie-slider .movie-glimpse-tall .glimpse .glimpse-text .info-window .info-window-likes .circle i, .main-area .movie-row .tall-movie-slider .movie-glimpse-tall .glimpse .glimpse-text .info-window .info-window-likes .circle i {
+  color: #fff;
+  font-size: 0.625vw;
+  vertical-align: middle;
+  margin-top: 0em;
+  margin-left: .2em;
+}
+
+.main-area .movie-row .movie-slider .movie-glimpse-tall .glimpse .glimpse-text .info-window .info-window-likes .circle i, .main-area .movie-row .tall-movie-slider .movie-glimpse-tall .glimpse .glimpse-text .info-window .info-window-likes .circle i {
+  position: absolute;
+  top: .25vw;
+  left: .15vw;
+}
+
+.main-area .movie-row .movie-slider .movie-glimpse-tall .glimpse .glimpse-text .down, .main-area .movie-row .tall-movie-slider .movie-glimpse-tall .glimpse .glimpse-text .down {
+  height: 15%;
+  width: 100%;
+  color: #fff;
+  position: relative;
+  z-index: 100;
+  text-align: center;
+}
+
+.main-area .movie-row .movie-slider .movie-glimpse-tall .glimpse .glimpse-text .down i:hover, .main-area .movie-row .tall-movie-slider .movie-glimpse-tall .glimpse .glimpse-text .down i:hover {
+  color: red;
+  cursor: pointer;
+}
+
+.main-area .movie-row .movie-slider .movie-glimpse-tall .movie-elapsed, .main-area .movie-row .tall-movie-slider .movie-glimpse-tall .movie-elapsed {
+  display: inline-block;
+  text-align: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 2.5vw;
+}
+
+.main-area .movie-row .movie-slider .movie-glimpse-tall .movie-elapsed .elapsed_bar, .main-area .movie-row .tall-movie-slider .movie-glimpse-tall .movie-elapsed .elapsed_bar {
+  display: inline-block;
+  width: 60%;
+  height: 3px;
+  background-color: #666666;
+  vertical-align: middle;
+}
+
+.main-area .movie-row .blinder-left {
+  position: absolute;
+  height: 100%;
+  width: 3.75vw;
+  background-color: rgba(20, 20, 20, 0.8);
+  z-index: 1;
+  height: 10.38961vw;
+  left: 0px;
+}
+
+.main-area .movie-row .blinder-right {
+  right: 0px;
+  position: absolute;
+  height: 100%;
+  width: 3.75vw;
+  background-color: rgba(20, 20, 20, 0.8);
+  z-index: 1;
+  height: 10.38961vw;
+}
+
+.big {
+  -moz-transform: scale(1.75);
+  -webkit-transform: scale(1.75);
+  transform: scale(1.75);
+  z-index: 3;
+}
+
+.tall-big {
+  -moz-transform: scale(1.25);
+  -webkit-transform: scale(1.25);
+  transform: scale(1.25);
+  z-index: 3;
+}
+
+.go_left {
+  -moz-transform: translateX(-6.86106vw);
+  -webkit-transform: translateX(-6.86106vw);
+  transform: translateX(-6.86106vw);
+}
+
+.go_right {
+  -moz-transform: translateX(6.86106vw);
+  -webkit-transform: translateX(6.86106vw);
+  transform: translateX(6.86106vw);
+}
+
+.go_tall_left {
+  -moz-transform: translateX(-2.42424vw);
+  -webkit-transform: translateX(-2.42424vw);
+  transform: translateX(-2.42424vw);
+}
+
+.go_tall_right {
+  -moz-transform: translateX(2.42424vw);
+  -webkit-transform: translateX(2.42424vw);
+  transform: translateX(2.42424vw);
+}
+
+.wrapper {
+  padding: 0px 3.75vw;
+}
+
+.blinder-left, .blinder-right {
+  text-align: center;
+}
+
+.blinder-left .fa, .blinder-right .fa {
+  color: #cccccc;
+  font-size: 1.75vw;
+  cursor: pointer;
+  margin-top: 110%;
+}
+
+.blinder-left .fa:hover, .blinder-right .fa:hover {
+  color: #fff;
+}
+
+.green {
+  border: 5px solid red;
+  background-color: green !important;
+  width: 400px;
+  height: 400px;
+}
+
+#gl_11 {
+  background-image: url("./images/tall_images/big_ mouth.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+#gl_12 {
+  background-image: url("./images/tall_images/brian_regan.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+#gl_13 {
+  background-image: url("./images/tall_images/godless.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+#gl_14 {
+  background-image: url("./images/tall_images/gotta_haveit.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+#gl_15 {
+  background-image: url("./images/tall_images/meyerowitz.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+#gl_16 {
+  background-image: url("./images/tall_images/punisher_tall.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+#gl_17 {
+  background-image: url("./images/tall_images/stranger_things.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+#gl_18 {
+  background-image: url("./images/tall_images/big_ mouth.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+#gl_19 {
+  background-image: url("./images/tall_images/brian_regan.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+#gl_20 {
+  background-image: url("./images/tall_images/godless.webp");
+  background-size: cover;
+  background-position: center;
+}
